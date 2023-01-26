@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<section class="main">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img class="header__logo-img" src="images/logo.svg" alt="logo">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                </div>
+
+                <nav class="header__menu">
+                    <li class="header__menu-list">
+                        <a class="header__menu-link" href="#">
+
+                            À la carte
+                        </a>
+                    </li>
+                    <li class="header__menu-list">
+                        <a class="header__menu-link" href="#">
+                            Wijnkaart
+                        </a>
+                    </li>
+                    <li class="header__menu-list">
+                        <a class="header__menu-link" href="#">
+                            Lunchmenu
+                        </a>
+                    </li>
+                    <li class="header__menu-list">
+                        <a class="header__menu-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="header__menu-list header__menu-list--call">
+                        <a href="" class="header__menu-call">
+                            <img class="header__call-img" src="images/icons/phone.svg" alt="svg звонка">
+                            <a href="tel:3292825725" class="header__call-link">
+                                +32 9 282 57 25
+                            </a>
+                        </a>
+                    </li>
+                </nav>
+                <div class="header__call">
+                    <img class="header__call-img" src="images/icons/phone.svg" alt="svg звонка">
+                    <a href="tel:3292825725" class="header__call-link">
+                        +32 9 282 57 25
+                    </a>
+                </div>
+            </div>
+    </header>
+    <div class="main__info">
+        <div class="container">
+            <p class="main__subtitle">
+                OPEN EVERYDAY
+                6AM - 9PM
+            </p>
+            <h2 class="main__title">
+                A bad day with lunch is better than a good day without it.
+            </h2>
+            <div class="main__links">
+                <a class="main__book-link" href="#">
+                    Reserve a table
+                </a>
+                <form id="form" action="send.php" class="main__form">
+                    <input class="main__form-input" name="name" type="text" placeholder="You Name" required>
+                    <input class="main__form-input" name="phone" type="phone" placeholder="Yor phone" required>
+                    <button class="main__form-btn" type="submit">
+                        Book
+                    </button>
+                </form>
+                <div class="main-message"></div>
+
+
+                <div class="main__social-links">
+                    <a class="main__social-link" href="#">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="23.5" stroke="white"/>
+                            <path d="M21.3359 18.832V20.64H16.6799V23.504H20.2479V25.28H16.6799V30H14.4399V18.832H21.3359ZM25.1643 22.432C25.4523 22.0053 25.847 21.6587 26.3483 21.392C26.8603 21.1253 27.4416 20.992 28.0923 20.992C28.8496 20.992 29.5323 21.1787 30.1403 21.552C30.759 21.9253 31.2443 22.4587 31.5963 23.152C31.959 23.8347 32.1403 24.6293 32.1403 25.536C32.1403 26.4427 31.959 27.248 31.5963 27.952C31.2443 28.6453 30.759 29.184 30.1403 29.568C29.5323 29.952 28.8496 30.144 28.0923 30.144C27.431 30.144 26.8496 30.016 26.3483 29.76C25.8576 29.4933 25.463 29.152 25.1643 28.736V30H22.9243V18.16H25.1643V22.432ZM29.8523 25.536C29.8523 25.0027 29.7403 24.544 29.5163 24.16C29.303 23.7653 29.015 23.4667 28.6523 23.264C28.3003 23.0613 27.9163 22.96 27.5003 22.96C27.095 22.96 26.711 23.0667 26.3483 23.28C25.9963 23.4827 25.7083 23.7813 25.4843 24.176C25.271 24.5707 25.1643 25.0347 25.1643 25.568C25.1643 26.1013 25.271 26.5653 25.4843 26.96C25.7083 27.3547 25.9963 27.6587 26.3483 27.872C26.711 28.0747 27.095 28.176 27.5003 28.176C27.9163 28.176 28.3003 28.0693 28.6523 27.856C29.015 27.6427 29.303 27.3387 29.5163 26.944C29.7403 26.5493 29.8523 26.08 29.8523 25.536Z"
+                                  fill="white"/>
+                        </svg>
+
+                    </a> <a class="main__social-link" href="#">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="23.5" stroke="white"/>
+                        <path d="M18.6956 18.832V30H16.4556V18.832H18.6956ZM24.3807 20.992C25.042 20.992 25.6234 21.1253 26.1247 21.392C26.626 21.648 27.0207 21.984 27.3087 22.4V21.136H29.5647V30.064C29.5647 30.8853 29.3994 31.616 29.0687 32.256C28.738 32.9067 28.242 33.4187 27.5807 33.792C26.9194 34.176 26.1194 34.368 25.1807 34.368C23.922 34.368 22.8874 34.0747 22.0767 33.488C21.2767 32.9013 20.8234 32.1013 20.7167 31.088H22.9407C23.058 31.4933 23.3087 31.8133 23.6927 32.048C24.0874 32.2933 24.562 32.416 25.1167 32.416C25.7674 32.416 26.2954 32.2187 26.7007 31.824C27.106 31.44 27.3087 30.8533 27.3087 30.064V28.688C27.0207 29.104 26.6207 29.4507 26.1087 29.728C25.6074 30.0053 25.0314 30.144 24.3807 30.144C23.634 30.144 22.9514 29.952 22.3327 29.568C21.714 29.184 21.2234 28.6453 20.8607 27.952C20.5087 27.248 20.3327 26.4427 20.3327 25.536C20.3327 24.64 20.5087 23.8453 20.8607 23.152C21.2234 22.4587 21.7087 21.9253 22.3167 21.552C22.9354 21.1787 23.6234 20.992 24.3807 20.992ZM27.3087 25.568C27.3087 25.024 27.202 24.56 26.9887 24.176C26.7754 23.7813 26.4874 23.4827 26.1247 23.28C25.762 23.0667 25.3727 22.96 24.9567 22.96C24.5407 22.96 24.1567 23.0613 23.8047 23.264C23.4527 23.4667 23.1647 23.7653 22.9407 24.16C22.7274 24.544 22.6207 25.0027 22.6207 25.536C22.6207 26.0693 22.7274 26.5387 22.9407 26.944C23.1647 27.3387 23.4527 27.6427 23.8047 27.856C24.1674 28.0693 24.5514 28.176 24.9567 28.176C25.3727 28.176 25.762 28.0747 26.1247 27.872C26.4874 27.6587 26.7754 27.36 26.9887 26.976C27.202 26.5813 27.3087 26.112 27.3087 25.568Z"
+                              fill="white"/>
+                    </svg>
+
+                </a> <a class="main__social-link" href="#">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="23.5" stroke="white"/>
+                        <path d="M20.8368 18.832V20.64H17.8608V30H15.6208V20.64H12.6448V18.832H20.8368ZM34.7592 21.136L32.1672 30H29.7512L28.1352 23.808L26.5192 30H24.0872L21.4792 21.136H23.7512L25.3192 27.888L27.0152 21.136H29.3832L31.0472 27.872L32.6152 21.136H34.7592Z"
+                              fill="white"/>
+                    </svg>
+
+                </a> <a class="main__social-link" href="#">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="23.5" stroke="white"/>
+                        <path d="M25.2965 18.832L21.5205 26.112V30H19.2805V26.112L15.4885 18.832H18.0165L20.4165 23.936L22.8005 18.832H25.2965ZM29.1964 22.976V27.264C29.1964 27.5627 29.2657 27.7813 29.4044 27.92C29.5537 28.048 29.799 28.112 30.1404 28.112H31.1804V30H29.7724C27.8844 30 26.9404 29.0827 26.9404 27.248V22.976H25.8844V21.136H26.9404V18.944H29.1964V21.136H31.1804V22.976H29.1964Z"
+                              fill="white"/>
+                    </svg>
+
+                </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<section class="timetable">
+    <div class="container">
+        <div class="timetable-side">
+            <div class="timetable__days">
+                <div class="timetable__day">
+                    <h4 class="timetable__title">
+                        Woensdag 12/01
+                    </h4>
+                    <div class="timetable__menu">
+                        <p class="timetable__subtitle">
+                            Salade met Serrano
+                        </p>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+
+
+                        <p class="timetable__subtitle">
+                            Steak Tartaar
+                        </p>
+
+                    </div>
+                </div>
+                <div class="timetable__day">
+                    <h4 class="timetable__title">
+                        Donderdag 13/01
+                    </h4>
+                    <div class="timetable__menu">
+                        <p class="timetable__subtitle">
+                            Toast Roquefort
+                        </p>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+
+
+                        <p class="timetable__subtitle">
+                            Penne met Kip en Prei
+                        </p>
+
+                    </div>
+                </div>
+                <div class="timetable__day">
+                    <h4 class="timetable__title">
+                        Vrijdag 14/01
+
+                    </h4>
+                    <div class="timetable__menu">
+                        <p class="timetable__subtitle">
+                            Verrassing van de Chef
+                        </p>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+
+
+                        <p class="timetable__subtitle">
+                            Penne met Kip en Prei
+                        </p>
+
+                    </div>
+                </div>
+                <div class="timetable__day">
+                    <h4 class="timetable__title">
+                        Vrijdag 15/01
+
+                    </h4>
+                    <div class="timetable__menu">
+                        <p class="timetable__subtitle">
+                            Verrassing van de Chef
+                        </p>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+
+
+                        <p class="timetable__subtitle">
+                            Penne met Kip en Prei
+                        </p>
+
+                    </div>
+                </div>
+                <div class="timetable__day">
+                    <h4 class="timetable__title">
+                        Vrijdag 14/01
+                    </h4>
+                    <div class="timetable__menu">
+                        <p class="timetable__subtitle">
+                            Verrassing van de Chef
+                        </p>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+                        <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+                        </svg>
+
+
+                        <p class="timetable__subtitle">
+                            Penne met Kip en Prei
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+            <img class="timetable__bg" src="images/bg-rest.svg" alt="">
+            <div class="timetable__images">
+                <img class="timetable__img timetable__img--first" src="images/photo1.jpg" alt="фото ресторана">
+                <img class="timetable__img" src="images/photo2.jpg" alt="фото ресторана">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info">
+    <div class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="info__img" src="images/point.svg" alt="svg ковычек" >
+                    <h2 class="info__title">
+                        Goede service, lekker eten, toffe ambiance
+                    </h2>
+                    <p class="info__subtitle">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor <br> invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                         accusam et <br> justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+
+                    </p>
+                    <h2 class="info__name">
+                        ALAIN HEYNDRICKX
+                    </h2>
+                </div>
+                <div class="swiper-slide">
+                    <img class="info__img" src="images/point.svg" alt="svg ковычек" >
+                    <h2 class="info__title">
+                        Goede service, lekker eten, toffe ambiance
+                    </h2>
+                    <p class="info__subtitle">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor <br> invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                        accusam et <br> justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+
+                    </p>
+                    <h2 class="info__name">
+                        ALAIN HEYNDRICKX
+                    </h2>
+                </div>
+                <div class="swiper-slide">
+                    <img class="info__img" src="images/point.svg" alt="svg ковычек" >
+                    <h2 class="info__title">
+                        Goede service, lekker eten, toffe ambiance
+                    </h2>
+                    <p class="info__subtitle">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor <br> invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                        accusam et <br> justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+
+                    </p>
+                    <h2 class="info__name">
+                        ALAIN HEYNDRICKX
+                    </h2>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+
+<script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+@import "fonts";
+@import "global";
+@import "libs";
+@import "reset";
+@import "vars";
+
+.header {
+  padding: 55px 12px;
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+&__menu{
+  display: flex;
+  align-items: center;
+}
+  &__menu-list{
+    margin-right: 45px;
+  }
+  &__menu-link{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    &:hover{
+      transition: all .3s;
+      color: $hover;
+    }
+  }
+  &__call {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+  }
+  &__call-link{
+    color: #fff;
+    &:hover{
+      transition: all .3s;
+      color: $hover;
+    }
+
+  }
+  &__menu-list--call{
+    display: none;
+  }
+
+}
+.main{
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__info{
+    padding: 140px 0 265px;
+    position: relative;
+  }
+  &__subtitle{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.06em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 88px;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  &__links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__book-link{
+    padding: 38px 65px;
+    color: #fff;
+    background-color: $bg;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    &:hover{
+      transition: all .3s;
+      background-color: $hover;
+    }
+  }
+  &__social-links {
+    display: flex;
+    align-items: center;
+  }
+  &__social-link{
+    margin-left: 25px;
+    &:hover {
+      transition: all .3s;
+      svg  > circle{
+        stroke: #D3B47F;
+      }
+    }
+
+  }
+  &__form{
+    width: 300px;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    display: none;
+    position: absolute;
+    top: 250px;
+    right: 50%;
+    left: 50%;
+
+
+    transform: translate(-50%, -50% );
+  }
+  &__form-input{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: $hover;
+    border: none;
+    outline: none;
+  }
+  &__form-input::placeholder {
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+  }
+  &__form-btn{
+    width: 100%;
+    color: #fff;
+    background-color: $hover ;
+    outline: none;
+    border: none;
+    padding: 20px;
+    &:hover {
+      transition: all .3s;
+      background: $bg;
+    }
+  }
+}
+.timetable{
+  padding: 80px 0 175px;
+
+  &-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px ;
+
+    position: relative;
+
+  }
+  &__bg{
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    z-index: -1;
+
+  }
+  &__menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__day{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-top: 20px;
+  }
+  &__day:first-child{
+    margin-top: 0;
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  &__subtitle{
+    font-size: 18px;
+    line-height: 32px;
+  }
+  &__images{
+    display: flex;
+    align-items: center;
+    gap: 20px ;
+    position: relative;
+  }
+  &__img--first{
+    position: absolute;
+    top: 150px;
+    right: 350px;
+  }
+
+
+
+}
+.info{
+  padding: 220px 0 220px;
+  text-align: center;
+  background-color: $bg;
+  img{
+    margin: 0 auto;
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    color: $hover;
+    margin-top: 35px;
+  }
+  &__subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #fff;
+    padding: 20px 0 35px;
+
+  }
+  &__name{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.245em;
+    color: $hover;
+  }
+}
+
+
+
+
+
+
+@import "media";
