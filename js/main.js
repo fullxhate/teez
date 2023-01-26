@@ -6,9 +6,9 @@ $(function (){
     $("#form").submit(function (e) {
         e.preventDefault();
         let form_data = $(this).serialize();
-        $.ajax({
+        $.post({
             type: "POST",
-            url: "send.php",
+            url: "post.php",
             data: form_data,
             success: function () {
 
@@ -31,7 +31,7 @@ let swiper = new Swiper('.swiper', {
     loop: false,
     trueMode: true,
     slidesPerView: 'auto',
-    spaceBetween: 17,
+    spaceBetween: 30,
     slidesPerGroup: 1,
     slidesOffsetAfter: 0,
     slidesOffsetBefore: 0,
